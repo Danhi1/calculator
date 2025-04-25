@@ -82,7 +82,7 @@ jobs:
           -p:GenerateProjectSpecificOutputFolder=true `
           -p:Version=${{ env.buildVersion }} `
           -p:SelfContained=true `
-          -p:RuntimeIdentifier=$runtime `
+          -p:RuntimeIdentifier=win-x64 `
           -maxCpuCount `
           -t:Publish `
           -p:PublishDir=${{ github.workspace }}\output\publish\
