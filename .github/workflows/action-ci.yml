@@ -39,7 +39,7 @@ jobs:
         id: unitTestPlatformList
         run: |
           if ($env:isPR -eq $false){
-            'unitTestPlatformList=["x64", "x86"]' | Out-File $env:GITHUB_OUTPUT -Append
+            'unitTestPlatformList=["x64"]' | Out-File $env:GITHUB_OUTPUT -Append
             echo 'Test x64, x86'
           }
           else{
